@@ -1,0 +1,30 @@
+<!-- activity_main.xml -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="630dp"
+            tools:itemCount="9"
+            android:layoutAnimation="@anim/layout_animation"
+            tools:listitem="@layout/item_lifecycle_event"
+            android:layout_marginStart="90dp"/>
+
+        <Button
+            android:id="@+id/mainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerView"
+            android:layout_centerInParent="true"
+            android:text="Go to second Activity" />
+
+
+    </RelativeLayout>
+</layout>
